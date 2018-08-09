@@ -1,0 +1,43 @@
+#
+# Generated backup file, do not edit.
+#
+# Originally at: C:/Users/Fredrik/AppData/Local/Temp/_RS_/si3mzert.zds/Backups/IRB2400_10kg_1.5m_3
+# 13-05-10  15:48:27
+#
+>>SYSTEM_ID:
+VIRTUAL_USE
+
+>>PRODUCTS_ID:
+RobotWare Version: 5.15.0266.00
+
+  RW Control module key
+  RobotWare OS and English
+  RW Drive module 1 key
+  ABB standard manipulator
+  IRB 2400 Type A
+  2400/10 Type A
+  Add axes IRB/drive module 140/1400
+  RC1 No add drive
+
+>>ROBOT_TYPE:
+2400/10 Type A
+
+>>HOME:
+All public files and directories
+
+>>SYSPAR:
+SYS.cfg
+PROC.cfg
+EIO.cfg
+SIO.cfg
+MOC.cfg
+MMC.cfg
+
+
+>>TASK1: (T_ROB1,,main)
+SYSMOD\user.sys @ user.sys
+PROGMOD\MW.mod @ mw.mod
+PROGMOD\CalibData.mod @ calibdata.mod
+
+
+>>EOF:

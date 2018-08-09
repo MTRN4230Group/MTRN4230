@@ -1,0 +1,36 @@
+C:\Users\mgrosvenor\Desktop\Matt Grosvenor Latest Apr09\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\32bit\1394camera.dll
+C:\Users\mgrosvenor\Desktop\Matt Grosvenor Latest Apr09\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\32bit\1394camerad.dll
+C:\Users\mgrosvenor\Desktop\Matt Grosvenor Latest Apr09\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\32bit\Ads1711.dll
+C:\Users\mgrosvenor\Desktop\Matt Grosvenor Latest Apr09\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\32bit\Adsapi32.dll
+C:\Users\mgrosvenor\Desktop\Matt Grosvenor Latest Apr09\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\32bit\AdsCAN.dll
+C:\Users\mgrosvenor\Desktop\Matt Grosvenor Latest Apr09\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\32bit\ADSCOMM.DLL
+C:\Users\mgrosvenor\Desktop\Matt Grosvenor Latest Apr09\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\32bit\Adsdemo.dll
+C:\Users\mgrosvenor\Desktop\Matt Grosvenor Latest Apr09\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\32bit\AdsDev.dll
+C:\Users\mgrosvenor\Desktop\Matt Grosvenor Latest Apr09\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\32bit\VisionDemo.exe
+C:\Users\mgrosvenor\Desktop\Matt Grosvenor Latest Apr09\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\32bit\IEEE1394CamDotNet.dll
+C:\Users\mgrosvenor\Desktop\Matt Grosvenor Latest Apr09\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\32bit\PCI1711IODotNet.dll
+C:\Users\mgrosvenor\Desktop\Matt Grosvenor Latest Apr09\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\obj\x86\32bit\ResolveAssemblyReference.cache
+C:\Users\mgrosvenor\Desktop\Matt Grosvenor Latest Apr09\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\obj\x86\32bit\VisionDemo.VisionDemoForm.resources
+C:\Users\mgrosvenor\Desktop\Matt Grosvenor Latest Apr09\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\obj\x86\32bit\VisionDemo.Properties.Resources.resources
+C:\Users\mgrosvenor\Desktop\Matt Grosvenor Latest Apr09\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\obj\x86\32bit\GenerateResource.read.1.tlog
+C:\Users\mgrosvenor\Desktop\Matt Grosvenor Latest Apr09\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\obj\x86\32bit\GenerateResource.write.1.tlog
+C:\Users\mgrosvenor\Desktop\Matt Grosvenor Latest Apr09\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\obj\x86\32bit\VisionDemo.exe
+C:\Documents and Settings\XPMUser\Desktop\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\obj\x86\32bit\VisionDemo.exe
+C:\Documents and Settings\XPMUser\Desktop\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\32bit\1394camera.dll
+C:\Documents and Settings\XPMUser\Desktop\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\32bit\1394camerad.dll
+C:\Documents and Settings\XPMUser\Desktop\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\32bit\Ads1711.dll
+C:\Documents and Settings\XPMUser\Desktop\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\32bit\Adsapi32.dll
+C:\Documents and Settings\XPMUser\Desktop\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\32bit\AdsCAN.dll
+C:\Documents and Settings\XPMUser\Desktop\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\32bit\ADSCOMM.DLL
+C:\Documents and Settings\XPMUser\Desktop\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\32bit\Adsdemo.dll
+C:\Documents and Settings\XPMUser\Desktop\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\32bit\AdsDev.dll
+C:\Documents and Settings\XPMUser\Desktop\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\32bit\VisionDemo.exe
+C:\Documents and Settings\XPMUser\Desktop\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\32bit\IEEE1394CamDotNet.dll
+C:\Documents and Settings\XPMUser\Desktop\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\32bit\PCI1711IODotNet.dll
+C:\Documents and Settings\XPMUser\Desktop\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\32bit\IEEE1394CamDotNet.pdb
+C:\Documents and Settings\XPMUser\Desktop\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\32bit\PCI1711IODotNet.pdb
+C:\Documents and Settings\XPMUser\Desktop\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\obj\x86\32bit\ResolveAssemblyReference.cache
+C:\Documents and Settings\XPMUser\Desktop\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\obj\x86\32bit\VisionDemo.VisionDemoForm.resources
+C:\Documents and Settings\XPMUser\Desktop\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\obj\x86\32bit\VisionDemo.Properties.Resources.resources
+C:\Documents and Settings\XPMUser\Desktop\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\obj\x86\32bit\GenerateResource.read.1.tlog
+C:\Documents and Settings\XPMUser\Desktop\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\obj\x86\32bit\GenerateResource.write.1.tlog

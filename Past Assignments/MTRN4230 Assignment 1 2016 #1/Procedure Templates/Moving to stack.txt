@@ -1,0 +1,15 @@
+%Sorting the chocolates on table
+%Possible to get in a loop?
+
+%setValues will be a dummy variable []
+%Get robot out of camera way
+chocolateCommands(17, setValues, handles.socket);
+
+%Table Snapshot and Processing for initial location and orientation
+
+%Don't think we need to do snapshot for the final location and orientation, just need processing
+
+%setValues is a 1x8 vector [initialx, initialy, initialz, theta_i, finalx, finaly, finalz, theta_f] 
+
+%Table to Table Movement
+chocolateCommands(12, setValues, handles.socket);

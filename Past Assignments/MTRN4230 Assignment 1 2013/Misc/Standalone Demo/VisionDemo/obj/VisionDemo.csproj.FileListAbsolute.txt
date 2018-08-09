@@ -1,0 +1,54 @@
+C:\Documents and Settings\Admin\Desktop\Standalone Demo\VisionDemo\bin\Debug\1394camera.dll
+C:\Documents and Settings\Admin\Desktop\Standalone Demo\VisionDemo\bin\Debug\1394camerad.dll
+C:\Documents and Settings\Admin\Desktop\Standalone Demo\VisionDemo\bin\Debug\Ads1711.dll
+C:\Documents and Settings\Admin\Desktop\Standalone Demo\VisionDemo\bin\Debug\Adsapi32.dll
+C:\Documents and Settings\Admin\Desktop\Standalone Demo\VisionDemo\bin\Debug\AdsCAN.dll
+C:\Documents and Settings\Admin\Desktop\Standalone Demo\VisionDemo\bin\Debug\ADSCOMM.DLL
+C:\Documents and Settings\Admin\Desktop\Standalone Demo\VisionDemo\bin\Debug\Adsdemo.dll
+C:\Documents and Settings\Admin\Desktop\Standalone Demo\VisionDemo\bin\Debug\AdsDev.dll
+C:\Documents and Settings\Admin\Desktop\Standalone Demo\VisionDemo\bin\Debug\VisionDemo.exe
+C:\Documents and Settings\Admin\Desktop\Standalone Demo\VisionDemo\bin\Debug\VisionDemo.pdb
+C:\Documents and Settings\Admin\Desktop\Standalone Demo\VisionDemo\bin\Debug\IEEE1394CamDotNet.dll
+C:\Documents and Settings\Admin\Desktop\Standalone Demo\VisionDemo\bin\Debug\PCI1711IODotNet.dll
+C:\Documents and Settings\Admin\Desktop\Standalone Demo\VisionDemo\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Admin\Desktop\Standalone Demo\VisionDemo\obj\Debug\VisionDemo.VisionDemoForm.resources
+C:\Documents and Settings\Admin\Desktop\Standalone Demo\VisionDemo\obj\Debug\VisionDemo.Properties.Resources.resources
+C:\Documents and Settings\Admin\Desktop\Standalone Demo\VisionDemo\obj\Debug\VisionDemo.csproj.GenerateResource.Cache
+C:\Documents and Settings\Admin\Desktop\Standalone Demo\VisionDemo\obj\Debug\VisionDemo.exe
+C:\Documents and Settings\Admin\Desktop\Standalone Demo\VisionDemo\obj\Debug\VisionDemo.pdb
+C:\Documents and Settings\Admin\Desktop\UNSW MTRN4221 Complete Vision Software\Student Bundle\VisionDemo\bin\Debug\1394camera.dll
+C:\Documents and Settings\Admin\Desktop\UNSW MTRN4221 Complete Vision Software\Student Bundle\VisionDemo\bin\Debug\1394camerad.dll
+C:\Documents and Settings\Admin\Desktop\UNSW MTRN4221 Complete Vision Software\Student Bundle\VisionDemo\bin\Debug\Ads1711.dll
+C:\Documents and Settings\Admin\Desktop\UNSW MTRN4221 Complete Vision Software\Student Bundle\VisionDemo\bin\Debug\Adsapi32.dll
+C:\Documents and Settings\Admin\Desktop\UNSW MTRN4221 Complete Vision Software\Student Bundle\VisionDemo\bin\Debug\AdsCAN.dll
+C:\Documents and Settings\Admin\Desktop\UNSW MTRN4221 Complete Vision Software\Student Bundle\VisionDemo\bin\Debug\ADSCOMM.DLL
+C:\Documents and Settings\Admin\Desktop\UNSW MTRN4221 Complete Vision Software\Student Bundle\VisionDemo\bin\Debug\Adsdemo.dll
+C:\Documents and Settings\Admin\Desktop\UNSW MTRN4221 Complete Vision Software\Student Bundle\VisionDemo\bin\Debug\AdsDev.dll
+C:\Documents and Settings\Admin\Desktop\UNSW MTRN4221 Complete Vision Software\Student Bundle\VisionDemo\bin\Debug\VisionDemo.exe
+C:\Documents and Settings\Admin\Desktop\UNSW MTRN4221 Complete Vision Software\Student Bundle\VisionDemo\bin\Debug\VisionDemo.pdb
+C:\Documents and Settings\Admin\Desktop\UNSW MTRN4221 Complete Vision Software\Student Bundle\VisionDemo\bin\Debug\IEEE1394CamDotNet.dll
+C:\Documents and Settings\Admin\Desktop\UNSW MTRN4221 Complete Vision Software\Student Bundle\VisionDemo\bin\Debug\PCI1711IODotNet.dll
+C:\Documents and Settings\Admin\Desktop\UNSW MTRN4221 Complete Vision Software\Student Bundle\VisionDemo\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Admin\Desktop\UNSW MTRN4221 Complete Vision Software\Student Bundle\VisionDemo\obj\Debug\VisionDemo.VisionDemoForm.resources
+C:\Documents and Settings\Admin\Desktop\UNSW MTRN4221 Complete Vision Software\Student Bundle\VisionDemo\obj\Debug\VisionDemo.Properties.Resources.resources
+C:\Documents and Settings\Admin\Desktop\UNSW MTRN4221 Complete Vision Software\Student Bundle\VisionDemo\obj\Debug\VisionDemo.csproj.GenerateResource.Cache
+C:\Documents and Settings\Admin\Desktop\UNSW MTRN4221 Complete Vision Software\Student Bundle\VisionDemo\obj\Debug\VisionDemo.exe
+C:\Documents and Settings\Admin\Desktop\UNSW MTRN4221 Complete Vision Software\Student Bundle\VisionDemo\obj\Debug\VisionDemo.pdb
+C:\Documents and Settings\Matthew Grosvenor\Desktop\Standalone Demo 20Mar09\Standalone Demo 20Mar09\VisionDemo\obj\Debug\VisionDemo.exe
+C:\Documents and Settings\Matthew Grosvenor\Desktop\Standalone Demo 20Mar09\Standalone Demo 20Mar09\VisionDemo\obj\Debug\VisionDemo.pdb
+C:\Documents and Settings\Matthew Grosvenor\Desktop\Standalone Demo 20Mar09\Standalone Demo 20Mar09\VisionDemo\bin\Debug\1394camera.dll
+C:\Documents and Settings\Matthew Grosvenor\Desktop\Standalone Demo 20Mar09\Standalone Demo 20Mar09\VisionDemo\bin\Debug\1394camerad.dll
+C:\Documents and Settings\Matthew Grosvenor\Desktop\Standalone Demo 20Mar09\Standalone Demo 20Mar09\VisionDemo\bin\Debug\Ads1711.dll
+C:\Documents and Settings\Matthew Grosvenor\Desktop\Standalone Demo 20Mar09\Standalone Demo 20Mar09\VisionDemo\bin\Debug\Adsapi32.dll
+C:\Documents and Settings\Matthew Grosvenor\Desktop\Standalone Demo 20Mar09\Standalone Demo 20Mar09\VisionDemo\bin\Debug\AdsCAN.dll
+C:\Documents and Settings\Matthew Grosvenor\Desktop\Standalone Demo 20Mar09\Standalone Demo 20Mar09\VisionDemo\bin\Debug\ADSCOMM.DLL
+C:\Documents and Settings\Matthew Grosvenor\Desktop\Standalone Demo 20Mar09\Standalone Demo 20Mar09\VisionDemo\bin\Debug\Adsdemo.dll
+C:\Documents and Settings\Matthew Grosvenor\Desktop\Standalone Demo 20Mar09\Standalone Demo 20Mar09\VisionDemo\bin\Debug\AdsDev.dll
+C:\Documents and Settings\Matthew Grosvenor\Desktop\Standalone Demo 20Mar09\Standalone Demo 20Mar09\VisionDemo\bin\Debug\VisionDemo.exe
+C:\Documents and Settings\Matthew Grosvenor\Desktop\Standalone Demo 20Mar09\Standalone Demo 20Mar09\VisionDemo\bin\Debug\VisionDemo.pdb
+C:\Documents and Settings\Matthew Grosvenor\Desktop\Standalone Demo 20Mar09\Standalone Demo 20Mar09\VisionDemo\bin\Debug\IEEE1394CamDotNet.dll
+C:\Documents and Settings\Matthew Grosvenor\Desktop\Standalone Demo 20Mar09\Standalone Demo 20Mar09\VisionDemo\bin\Debug\PCI1711IODotNet.dll
+C:\Documents and Settings\Matthew Grosvenor\Desktop\Standalone Demo 20Mar09\Standalone Demo 20Mar09\VisionDemo\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Matthew Grosvenor\Desktop\Standalone Demo 20Mar09\Standalone Demo 20Mar09\VisionDemo\obj\Debug\VisionDemo.VisionDemoForm.resources
+C:\Documents and Settings\Matthew Grosvenor\Desktop\Standalone Demo 20Mar09\Standalone Demo 20Mar09\VisionDemo\obj\Debug\VisionDemo.Properties.Resources.resources
+C:\Documents and Settings\Matthew Grosvenor\Desktop\Standalone Demo 20Mar09\Standalone Demo 20Mar09\VisionDemo\obj\Debug\VisionDemo.csproj.GenerateResource.Cache

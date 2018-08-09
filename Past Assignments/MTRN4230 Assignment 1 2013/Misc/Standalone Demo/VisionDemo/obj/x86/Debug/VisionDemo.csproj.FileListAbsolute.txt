@@ -1,0 +1,107 @@
+C:\Users\mgrosvenor\Desktop\Matt Grosvenor Latest Apr09\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\Debug\1394camera.dll
+C:\Users\mgrosvenor\Desktop\Matt Grosvenor Latest Apr09\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\Debug\1394camerad.dll
+C:\Users\mgrosvenor\Desktop\Matt Grosvenor Latest Apr09\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\Debug\Ads1711.dll
+C:\Users\mgrosvenor\Desktop\Matt Grosvenor Latest Apr09\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\Debug\Adsapi32.dll
+C:\Users\mgrosvenor\Desktop\Matt Grosvenor Latest Apr09\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\Debug\AdsCAN.dll
+C:\Users\mgrosvenor\Desktop\Matt Grosvenor Latest Apr09\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\Debug\ADSCOMM.DLL
+C:\Users\mgrosvenor\Desktop\Matt Grosvenor Latest Apr09\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\Debug\Adsdemo.dll
+C:\Users\mgrosvenor\Desktop\Matt Grosvenor Latest Apr09\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\Debug\AdsDev.dll
+C:\Users\mgrosvenor\Desktop\Matt Grosvenor Latest Apr09\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\Debug\VisionDemo.exe
+C:\Users\mgrosvenor\Desktop\Matt Grosvenor Latest Apr09\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\Debug\VisionDemo.pdb
+C:\Users\mgrosvenor\Desktop\Matt Grosvenor Latest Apr09\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\Debug\IEEE1394CamDotNet.dll
+C:\Users\mgrosvenor\Desktop\Matt Grosvenor Latest Apr09\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\Debug\PCI1711IODotNet.dll
+C:\Users\mgrosvenor\Desktop\Matt Grosvenor Latest Apr09\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\mgrosvenor\Desktop\Matt Grosvenor Latest Apr09\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\obj\x86\Debug\VisionDemo.VisionDemoForm.resources
+C:\Users\mgrosvenor\Desktop\Matt Grosvenor Latest Apr09\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\obj\x86\Debug\VisionDemo.Properties.Resources.resources
+C:\Users\mgrosvenor\Desktop\Matt Grosvenor Latest Apr09\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\mgrosvenor\Desktop\Matt Grosvenor Latest Apr09\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\mgrosvenor\Desktop\Matt Grosvenor Latest Apr09\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\obj\x86\Debug\VisionDemo.exe
+C:\Users\mgrosvenor\Desktop\Matt Grosvenor Latest Apr09\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\obj\x86\Debug\VisionDemo.pdb
+C:\Users\mgrosvenor\Desktop\Matt Grosvenor Latest Apr09\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\Debug\IEEE1394CamDotNet.pdb
+C:\Users\mgrosvenor\Desktop\Matt Grosvenor Latest Apr09\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\Debug\PCI1711IODotNet.pdb
+C:\Documents and Settings\XPMUser\Desktop\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\obj\x86\Debug\VisionDemo.exe
+C:\Documents and Settings\XPMUser\Desktop\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\obj\x86\Debug\VisionDemo.pdb
+C:\Documents and Settings\XPMUser\Desktop\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\Debug\1394camera.dll
+C:\Documents and Settings\XPMUser\Desktop\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\Debug\1394camerad.dll
+C:\Documents and Settings\XPMUser\Desktop\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\Debug\Ads1711.dll
+C:\Documents and Settings\XPMUser\Desktop\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\Debug\Adsapi32.dll
+C:\Documents and Settings\XPMUser\Desktop\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\Debug\AdsCAN.dll
+C:\Documents and Settings\XPMUser\Desktop\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\Debug\ADSCOMM.DLL
+C:\Documents and Settings\XPMUser\Desktop\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\Debug\Adsdemo.dll
+C:\Documents and Settings\XPMUser\Desktop\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\Debug\AdsDev.dll
+C:\Documents and Settings\XPMUser\Desktop\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\Debug\VisionDemo.exe
+C:\Documents and Settings\XPMUser\Desktop\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\Debug\VisionDemo.pdb
+C:\Documents and Settings\XPMUser\Desktop\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\Debug\IEEE1394CamDotNet.dll
+C:\Documents and Settings\XPMUser\Desktop\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\Debug\PCI1711IODotNet.dll
+C:\Documents and Settings\XPMUser\Desktop\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\Debug\IEEE1394CamDotNet.pdb
+C:\Documents and Settings\XPMUser\Desktop\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\bin\x86\Debug\PCI1711IODotNet.pdb
+C:\Documents and Settings\XPMUser\Desktop\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\XPMUser\Desktop\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\obj\x86\Debug\VisionDemo.VisionDemoForm.resources
+C:\Documents and Settings\XPMUser\Desktop\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\obj\x86\Debug\VisionDemo.Properties.Resources.resources
+C:\Documents and Settings\XPMUser\Desktop\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\XPMUser\Desktop\Matt Grosvenor Latest Apr09\Standalone Demo\VisionDemo\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\mgrosvenor\Desktop\MTRN4230 Feb 2011\Standalone Demo\VisionDemo\obj\x86\Debug\VisionDemo.exe
+C:\Users\mgrosvenor\Desktop\MTRN4230 Feb 2011\Standalone Demo\VisionDemo\obj\x86\Debug\VisionDemo.pdb
+C:\Users\mgrosvenor\Desktop\MTRN4230 Feb 2011\Standalone Demo\VisionDemo\bin\x86\Debug\1394camera.dll
+C:\Users\mgrosvenor\Desktop\MTRN4230 Feb 2011\Standalone Demo\VisionDemo\bin\x86\Debug\1394camerad.dll
+C:\Users\mgrosvenor\Desktop\MTRN4230 Feb 2011\Standalone Demo\VisionDemo\bin\x86\Debug\Ads1711.dll
+C:\Users\mgrosvenor\Desktop\MTRN4230 Feb 2011\Standalone Demo\VisionDemo\bin\x86\Debug\Adsapi32.dll
+C:\Users\mgrosvenor\Desktop\MTRN4230 Feb 2011\Standalone Demo\VisionDemo\bin\x86\Debug\AdsCAN.dll
+C:\Users\mgrosvenor\Desktop\MTRN4230 Feb 2011\Standalone Demo\VisionDemo\bin\x86\Debug\ADSCOMM.DLL
+C:\Users\mgrosvenor\Desktop\MTRN4230 Feb 2011\Standalone Demo\VisionDemo\bin\x86\Debug\Adsdemo.dll
+C:\Users\mgrosvenor\Desktop\MTRN4230 Feb 2011\Standalone Demo\VisionDemo\bin\x86\Debug\AdsDev.dll
+C:\Users\mgrosvenor\Desktop\MTRN4230 Feb 2011\Standalone Demo\VisionDemo\bin\x86\Debug\VisionDemo.exe
+C:\Users\mgrosvenor\Desktop\MTRN4230 Feb 2011\Standalone Demo\VisionDemo\bin\x86\Debug\VisionDemo.pdb
+C:\Users\mgrosvenor\Desktop\MTRN4230 Feb 2011\Standalone Demo\VisionDemo\bin\x86\Debug\IEEE1394CamDotNet.dll
+C:\Users\mgrosvenor\Desktop\MTRN4230 Feb 2011\Standalone Demo\VisionDemo\bin\x86\Debug\PCI1711IODotNet.dll
+C:\Users\mgrosvenor\Desktop\MTRN4230 Feb 2011\Standalone Demo\VisionDemo\bin\x86\Debug\IEEE1394CamDotNet.pdb
+C:\Users\mgrosvenor\Desktop\MTRN4230 Feb 2011\Standalone Demo\VisionDemo\bin\x86\Debug\PCI1711IODotNet.pdb
+C:\Users\mgrosvenor\Desktop\MTRN4230 Feb 2011\Standalone Demo\VisionDemo\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\mgrosvenor\Desktop\MTRN4230 Feb 2011\Standalone Demo\VisionDemo\obj\x86\Debug\VisionDemo.VisionDemoForm.resources
+C:\Users\mgrosvenor\Desktop\MTRN4230 Feb 2011\Standalone Demo\VisionDemo\obj\x86\Debug\VisionDemo.Properties.Resources.resources
+C:\Users\mgrosvenor\Desktop\MTRN4230 Feb 2011\Standalone Demo\VisionDemo\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\mgrosvenor\Desktop\MTRN4230 Feb 2011\Standalone Demo\VisionDemo\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\mgrosvenor\Desktop\Blackboard\Standalone Demo\Standalone Demo\VisionDemo\obj\x86\Debug\VisionDemo.exe
+C:\Users\mgrosvenor\Desktop\Blackboard\Standalone Demo\Standalone Demo\VisionDemo\obj\x86\Debug\VisionDemo.pdb
+C:\Documents and Settings\All Users\Desktop\Standalone Demo\VisionDemo\obj\x86\Debug\VisionDemo.exe
+C:\Documents and Settings\All Users\Desktop\Standalone Demo\VisionDemo\obj\x86\Debug\VisionDemo.pdb
+C:\Documents and Settings\All Users\Desktop\Standalone Demo\VisionDemo\bin\x86\Debug\1394camera.dll
+C:\Documents and Settings\All Users\Desktop\Standalone Demo\VisionDemo\bin\x86\Debug\1394camerad.dll
+C:\Documents and Settings\All Users\Desktop\Standalone Demo\VisionDemo\bin\x86\Debug\Ads1711.dll
+C:\Documents and Settings\All Users\Desktop\Standalone Demo\VisionDemo\bin\x86\Debug\Adsapi32.dll
+C:\Documents and Settings\All Users\Desktop\Standalone Demo\VisionDemo\bin\x86\Debug\AdsCAN.dll
+C:\Documents and Settings\All Users\Desktop\Standalone Demo\VisionDemo\bin\x86\Debug\ADSCOMM.DLL
+C:\Documents and Settings\All Users\Desktop\Standalone Demo\VisionDemo\bin\x86\Debug\Adsdemo.dll
+C:\Documents and Settings\All Users\Desktop\Standalone Demo\VisionDemo\bin\x86\Debug\AdsDev.dll
+C:\Documents and Settings\All Users\Desktop\Standalone Demo\VisionDemo\bin\x86\Debug\VisionDemo.exe
+C:\Documents and Settings\All Users\Desktop\Standalone Demo\VisionDemo\bin\x86\Debug\VisionDemo.pdb
+C:\Documents and Settings\All Users\Desktop\Standalone Demo\VisionDemo\bin\x86\Debug\IEEE1394CamDotNet.dll
+C:\Documents and Settings\All Users\Desktop\Standalone Demo\VisionDemo\bin\x86\Debug\PCI1711IODotNet.dll
+C:\Documents and Settings\All Users\Desktop\Standalone Demo\VisionDemo\bin\x86\Debug\IEEE1394CamDotNet.pdb
+C:\Documents and Settings\All Users\Desktop\Standalone Demo\VisionDemo\bin\x86\Debug\PCI1711IODotNet.pdb
+C:\Documents and Settings\All Users\Desktop\Standalone Demo\VisionDemo\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\All Users\Desktop\Standalone Demo\VisionDemo\obj\x86\Debug\VisionDemo.VisionDemoForm.resources
+C:\Documents and Settings\All Users\Desktop\Standalone Demo\VisionDemo\obj\x86\Debug\VisionDemo.Properties.Resources.resources
+C:\Documents and Settings\All Users\Desktop\Standalone Demo\VisionDemo\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\All Users\Desktop\Standalone Demo\VisionDemo\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Google Drive\uni\MTRN4230 - Robotics\Robot Project\Lab\Standalone Demo\VisionDemo\obj\x86\Debug\VisionDemo.exe
+D:\Google Drive\uni\MTRN4230 - Robotics\Robot Project\Lab\Standalone Demo\VisionDemo\obj\x86\Debug\VisionDemo.pdb
+D:\Google Drive\uni\MTRN4230 - Robotics\Robot Project\Lab\Standalone Demo\VisionDemo\bin\x86_new\32bit\1394camera.dll
+D:\Google Drive\uni\MTRN4230 - Robotics\Robot Project\Lab\Standalone Demo\VisionDemo\bin\x86_new\32bit\1394camerad.dll
+D:\Google Drive\uni\MTRN4230 - Robotics\Robot Project\Lab\Standalone Demo\VisionDemo\bin\x86_new\32bit\Ads1711.dll
+D:\Google Drive\uni\MTRN4230 - Robotics\Robot Project\Lab\Standalone Demo\VisionDemo\bin\x86_new\32bit\Adsapi32.dll
+D:\Google Drive\uni\MTRN4230 - Robotics\Robot Project\Lab\Standalone Demo\VisionDemo\bin\x86_new\32bit\AdsCAN.dll
+D:\Google Drive\uni\MTRN4230 - Robotics\Robot Project\Lab\Standalone Demo\VisionDemo\bin\x86_new\32bit\ADSCOMM.DLL
+D:\Google Drive\uni\MTRN4230 - Robotics\Robot Project\Lab\Standalone Demo\VisionDemo\bin\x86_new\32bit\Adsdemo.dll
+D:\Google Drive\uni\MTRN4230 - Robotics\Robot Project\Lab\Standalone Demo\VisionDemo\bin\x86_new\32bit\AdsDev.dll
+D:\Google Drive\uni\MTRN4230 - Robotics\Robot Project\Lab\Standalone Demo\VisionDemo\bin\x86_new\32bit\VisionDemo.exe
+D:\Google Drive\uni\MTRN4230 - Robotics\Robot Project\Lab\Standalone Demo\VisionDemo\bin\x86_new\32bit\VisionDemo.pdb
+D:\Google Drive\uni\MTRN4230 - Robotics\Robot Project\Lab\Standalone Demo\VisionDemo\bin\x86_new\32bit\IEEE1394CamDotNet.dll
+D:\Google Drive\uni\MTRN4230 - Robotics\Robot Project\Lab\Standalone Demo\VisionDemo\bin\x86_new\32bit\PCI1711IODotNet.dll
+D:\Google Drive\uni\MTRN4230 - Robotics\Robot Project\Lab\Standalone Demo\VisionDemo\bin\x86_new\32bit\IEEE1394CamDotNet.pdb
+D:\Google Drive\uni\MTRN4230 - Robotics\Robot Project\Lab\Standalone Demo\VisionDemo\bin\x86_new\32bit\PCI1711IODotNet.pdb
+D:\Google Drive\uni\MTRN4230 - Robotics\Robot Project\Lab\Standalone Demo\VisionDemo\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Google Drive\uni\MTRN4230 - Robotics\Robot Project\Lab\Standalone Demo\VisionDemo\obj\x86\Debug\VisionDemo.VisionDemoForm.resources
+D:\Google Drive\uni\MTRN4230 - Robotics\Robot Project\Lab\Standalone Demo\VisionDemo\obj\x86\Debug\VisionDemo.Properties.Resources.resources
+D:\Google Drive\uni\MTRN4230 - Robotics\Robot Project\Lab\Standalone Demo\VisionDemo\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Google Drive\uni\MTRN4230 - Robotics\Robot Project\Lab\Standalone Demo\VisionDemo\obj\x86\Debug\GenerateResource.write.1.tlog

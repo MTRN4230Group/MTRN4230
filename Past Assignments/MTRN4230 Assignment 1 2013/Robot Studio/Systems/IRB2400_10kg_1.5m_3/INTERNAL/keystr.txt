@@ -1,0 +1,3 @@
+#Loaded keys in C:\Users\Fredrik\Documents\RobotStudio\Systems\IRB2400_10kg_1.5m_3\INTERNAL\keystr.txt:
+3KKKKKZJJUc34KKKKKKKKh
+.s0bZZTskQR	1

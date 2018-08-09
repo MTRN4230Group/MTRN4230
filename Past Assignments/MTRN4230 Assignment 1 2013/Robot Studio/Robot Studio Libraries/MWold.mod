@@ -1,0 +1,532 @@
+MODULE MW
+
+    VAR num counter;
+    VAR num offsvarX;
+    VAR num offsvarY;
+    VAR num xoffset;
+    VAR num yoffset;
+    VAR num pallethole;
+    VAR num RunTime:= 5;
+    VAR num PinINGripper;
+    VAR num Command;
+    !REMEMBER TO CHANGE THIS IN FINAL (comment)
+    PERS num DMH:= 1;
+    
+!Comment While in RobotStudio;
+   ! VAR num SignalDelay:= 2;
+!Uncomment while in robotstudio:
+    !VAR num Din;
+  
+  !-------------OWN TARGETS-------------!
+  !
+  !# TILTED Position of the Pallet from the Home Position (Tilted) 
+  ! OLD NOT USED CONST robtarget pPalHomeTilt:=[[1015.987042359,-133.981901811,718.978895592],[0.000045049,-0.665857682,-0.00005045,-0.746078778],[-1,-1,-2,0],[9E9,9E9,9E9,9E9,9E9,9E9]];
+  !
+  ! OLD NOT USED CONST robtarget pPalHomeTilt:=[[1016,-134.1,718.9],[0.00384,-0.59383, -0.00571, -0.80457],[-1,-1,-2,0],[9E9,9E9,9E9,9E9,9E9,9E9]];
+  CONST robtarget pPalHomeTilt:=[[1015,-134.1,718.7],[0.00423,-0.5433, -0.0054, -0.8395],[-1,-1,-2,0],[9E9,9E9,9E9,9E9,9E9,9E9]];
+!#Position of Slug ready to Drop into HOLE NUMBER 1 of the Pallet on the Conveyer
+  CONST robtarget pSlugPallH1D:=[[-306.3,-1341.28,493.07],[0.499794,0.500175,0.500017,-0.500013],[-2,-1,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+  !
+  !#Position of Slug ready to GRAB PIN IN HOLE NUMBER 1 of the Pallet on the Conveyer
+ 
+  !Uncomment while in robotstuio: (THIS IS TARGET THAT WORKS WITH SIMULATION)
+    CONST robtarget pSlugPallH1G:=[[-306.3,-1341.28,493.07],[0.499794,0.500175,0.500017,-0.500013],[-2,-1,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+  !	  
+  !Comment while in robotstuio:(THIS IS THE REAL TARGET)
+  !CONST robtarget pSlugPallH1G:=[[-306.3,-1341.28,467.71],[0.499794,0.500175,0.500017,-0.500013],[-2,-1,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+  
+!#Position in safe position from conveyor with tilt
+	CONST robtarget pConvTilt:=[[-234.5, -1061.8, 596.5], [0.61732, 0.34490, -0.34483, 0.61730],[-2,-1,-2,0],[9E9,9E9,9E9,9E9,9E9,9E9]];
+  
+  !New safe position
+  CONST robtarget pnewsafe:=[[641.8,420.7,686.3] ,[0.668321,-0.230856,0.668582,0.230329],[0,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];	
+  !# SAFE Position of Slug 1 (Eastern Side) on the Dispenser ready to Grip
+  ! NOT IN USE CONST robtarget pSlugDispG1Safe:=[[778.35,720.35,650.08],[0.668321,-0.230856,0.668582,0.230329],[0,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+  !	
+CONST robtarget pSlugDispG1Safe:=[[890.6,577.3,657.9],[0.67814,-0.20071,0.678,0.20039],[0,0,-1,0],[9E9,9E9,9E9,9E9,9E9,9E9]];
+  !# SAFE Position of Slug 2 (Western Side) on the Dispenser ready to Grip
+  !NOT IN USE  CONST robtarget pSlugDispG2Safe:=[[901.56,565.81,651.83],[0.668406,-0.230832,0.668515,0.230301],[0,-1,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+  !
+CONST robtarget pSlugDispG2Safe:=[[784.1,715.6,657.7],[0.6583,-0.26904,0.65409,0.25768],[0,-1,0,0],[9E9,9E9,9E9,9E9,9E9,9E9]];
+  !#INTERMEDIATE Position between dispensers and conveyor
+  CONST robtarget pDispConvInt:=[[887.7,-578.4,995.2],[0.65468,0.26515,0.65644,-0.26491],[-1,-1,0,0],[9E9,9E9,9E9,9E9,9E9,9E9]];
+  !
+ !Position of Slug 1 (Eastern Side) ready to Drop into the Dispenser 
+  !CONST robtarget pSlugDispD1:=[[853,794,1590],[0.668406,-0.230832,0.668515,0.230301],[0,-1,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+  CONST robtarget pSlugDispD1:=[[850.706,785.306,1590],[0.668406,-0.230832,0.668515,0.230301],[0,-1,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+
+  !
+
+  !Position of Slug 2 (Western Side) ready to Drop into the Dispenser 
+
+  CONST robtarget pSlugDispD2:=[[974,645,1590],[0.668406,-0.230832,0.668515,0.230301],[0,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+
+  !
+  !!NEW SAFE TARGETS
+  !
+   !Safe Position of Slug 1 (Eastern Side) on the Dispenser ready to Grip (150mm from slug)
+  CONST robtarget pSafe15DispG1:=[[741.4,686.1,652],[0.668406,-0.230832,0.668515,0.230301],[0,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+  !
+  !Safe Position of Slug 2 (Western Side) on the Dispenser ready to Grip (150mm from slug)
+  CONST robtarget pSafe15DispG2:=[[850.2,551.4,652],[0.668406,-0.230832,0.668515,0.230301],[0,-1,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+  !
+  !Stop Safe Position of Slug 1 (Eastern Side) on the Dispenser ready to Grip (25mm from slug)
+  CONST robtarget pSafe25DispG1:=[[833.2,771,652],[0.668406,-0.230832,0.668515,0.230301],[0,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+  !
+  !Stop Safe Position of Slug 2 (Western Side) on the Dispenser ready to Grip (25mm from slug)
+  CONST robtarget pSafe25DispG2:=[[955,619.4,652],[0.668406,-0.230832,0.668515,0.230301],[0,-1,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+
+  !------------GIVEN TARGETS------------!
+  !
+  !Position of Slug ready to PickUp from the Centre hole of the Pallet on the Conveyer
+  CONST robtarget pSlugPallConvCP:=[[-236.32,-1271.28,467.71],[0.499775,0.500257,0.500025,-0.499943],[-2,-1,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+  !
+  !Position of Slug ready to Drop into the Centre hole of the Pallet on the Conveyer
+  CONST robtarget pSlugPallConvCD:=[[-236.3,-1271.28,493.07],[0.499794,0.500175,0.500017,-0.500013],[-2,-1,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+  !
+  !Position of Slug 1 (Eastern Side) on the Dispenser ready to Grip
+  CONST robtarget pSlugDispG1:=[[851.75,788.07,650.08],[0.668321,-0.230856,0.668582,0.230329],[0,0,-1,0],[9E9,9E9,9E9,9E9,9E9,9E9]];
+  !
+  !Position of Slug 2 (Western Side) on the Dispenser ready to Grip
+  CONST robtarget pSlugDispG2:=[[974.96,633.73,651.83],[0.668406,-0.230832,0.668515,0.230301],[0,-1,0,0],[9E9,9E9,9E9,9E9,9E9,9E9]];
+  !
+  !Position of the Pallet on the Conveyer
+  CONST robtarget pPalletConv:=[[-234.56,-1344.02,396.85],[0.50004,0.499943,-0.50004,0.499977],[-2,-1,-2,0],[9E9,9E9,9E9,9E9,9E9,9E9]];
+  !
+  !Position of the Pallet in the Home Position
+  CONST robtarget pPalletHome:=[[1250.04,-133.95,504.28],[0.000048,-0.707408,-0.000048,-0.706806],[-1,-1,-2,0],[9E9,9E9,9E9,9E9,9E9,9E9]];
+  !
+  !Calibrate Position for all Joints
+  CONST jointtarget jtCalibPos:=[[0,0,0,0,0,0],[9E9,9E9,9E9,9E9,9E9,9E9]];
+  !
+  ! 
+  !---------TOOL DATA---------!
+  !
+  !Tool Centre Point (TCP), Orientation, Mass and  COG for the Gripper 
+  PERS tooldata tGrip:=[TRUE,[[30,0,180],[1,0,0,0]],[1.5,[0,0,80],[1,0,0,0],0,0,0]];
+  !
+  !Tool Centre Point (TCP), Orientation, Mass and  COG for the Tines
+  PERS tooldata tTine:=[TRUE,[[-114.5,0,234.15],[1,0,0,0]],[1.5,[0,0,80],[1,0,0,0],0.04,0.04,0.04]];
+  !
+  !
+  !---------LOAD DATA---------! 
+  !
+  PERS loaddata loSlug:=[0.62,[-35,0,0],[1,0,0,0],0,0,0];
+  !
+  ! The above code is provided from Steve Kuhle
+  !
+  !
+  !--------PROCEDURES--------!
+  !
+  !Place pallet on conveyor and return robot to home position or "Waiting position"
+  PROC PlacePallet()
+	
+   	 MoveJ Offs(pPalletHome,-232,0,100), v1000, z50, tTine; 
+   	 MoveJ Offs(pPalletHome,-232,0,0), v500, fine, tTine; 
+     !Moved Pickup position 1 cm)
+     MoveL pPalletHome, v200, fine, tTine;
+    MoveL Offs(pPalletHome,0,0,50), v200, fine, tTine;
+	MoveL pPalHomeTilt, v300, fine, tTine;
+    MoveJ Offs(pPalletConv,0,282,200), v1000, z100, tTine;
+	MoveL Offs(pPalletConv,0,0,50), v500, fine, tTine;
+    MoveL pPalletConv, v200, fine, tTine;
+	MoveL Offs(pPalletConv,0,282,0), v200, fine, tTine;
+	
+    !if in robotstudio COMMENT:
+!    SetGO Dout,255;
+!	SetGO \Sdelay := SignalDelay,Dout,0;
+TPWrite "Pallet on conveyor";
+	
+	MoveL Offs(pPalletConv,0,282,200), v1000, z50, tTine;
+	MoveAbsJ jtCalibPos, vMax, fine, tTine;
+	
+  ENDPROC
+
+  ! Return pallet to home and return robot to home position or "Waiting position"
+PROC ReturnPallet()
+    
+    MoveJ Offs(pPalletConv,0,282,200), vMax, fine, tTine;
+    MoveL Offs(pPalletConv,0,282,0), v200, fine, tTine;
+    MoveL pPalletConv, v200, fine, tTine;
+    MoveL Offs(pPalletConv, 0,0,50), v200, fine, tTine; !TILT??
+!    MoveJ pConvTilt, v200, fine, tTine;
+    MoveJ Offs(pPalletConv,0,282,200), v1000, z100, tTine;
+    MoveJ pPalHomeTilt, v1000, z100, tTine;
+    MoveJ Offs(pPalletHome,0,0,100), v500, z50, tTine;
+    MoveL pPalletHome, v200, fine, tTine;
+
+
+    MoveL Offs(pPalletHome,-232,0,0), v500, fine, tTine;
+    MoveJ Offs(pPalletHome,-232,0,100), v1000, z50, tTine;
+    MoveAbsJ jtCalibPos, vMax, fine, tTine;  
+    
+	!COMMENT if in robotstudio :
+!	SetGO Dout,250;
+!	SetGO \Sdelay := SignalDelay,Dout,0;
+    TPWrite "Pallet returned to table";
+ENDPROC
+
+
+  ! Moves pin to from dispensers to position over pallet center hole pallet. 
+  PROC GetPin()
+	
+	
+    Set Grip;
+	WaitTime 1;
+	
+	IF Disp1 = 1 THEN
+		!Pick pin from dispenser 1 and move to pallet
+		TPWrite "Getting pin from dispenser 1";
+		!MoveJ pnewsafe, v500, fine, tGrip;	
+        MoveJ Offs(pSafe15DispG1,-100,-130,200), v1000, z200, tGrip;
+		MoveJ pSafe15DispG1, v500, z50, tGrip;
+         
+        MoveJ pSafe25DispG1, v500, fine,tGrip;
+!        MoveJ pSlugDispG1Safe, v500, fine, tGrip;
+       
+		MoveL pSlugDispG1, v200, fine, tGrip;
+		Reset Grip;
+		WaitTime 1;
+		PinINGripper:= 1;
+		
+		MoveJ pSafe25DispG1, v500, fine,tGrip;
+        MoveJ pSafe15DispG1, v500, z50, tGrip;
+        MoveJ Offs(pSafe15DispG1,-100,-130,200), v1000, z200, tGrip;
+!        MoveL pSlugDispG1Safe, v200, fine, tGrip;
+		
+		
+	ELSEIF Disp2 = 1 THEN
+		!Pick pin from dispenser 2 and move to pallet
+        TPWrite "Dispenser 1 is empty, getting pin from dispenser 2";
+!		MoveJ pSlugDispG2Safe, v1000, fine, tGrip;
+        MoveJ Offs(pSafe15DispG2,-100,-130,200), v1000, z200, tGrip;
+		MoveJ pSafe15DispG2, v500, z50, tGrip;
+       
+        MoveJ pSafe25DispG2, v500, fine,tGrip;		
+        MoveL pSlugDispG2, v200, fine, tGrip;
+		Reset Grip;
+		WaitTime 1;
+		PinINGripper:= 1;
+        MoveJ pSafe25DispG2, v500, fine,tGrip;		
+        MoveJ pSafe15DispG2, v500, z50, tGrip;
+        MoveJ Offs(pSafe15DispG2,-100,-130,200), v1000, z200, tGrip;
+!		MoveL pSlugDispG2Safe, v200, fine, tGrip;
+
+	ELSE
+		TPWrite "No pin in dispensers";
+        RETURN;
+
+		!if in robotstudio COMMENT:
+!		SetGO Dout,235;
+!		SetGO \Sdelay := SignalDelay,Dout,0;
+	ENDIF
+
+	MoveJ pDispConvInt, vMax, z200, tGrip;
+	MoveJ Offs(pSlugPallConvCD,0,200,200), v1000, z200, tGrip;
+	!MoveJ Offs(pSlugPallConvCD,0,0,200), v1000, fine, tGrip;
+ENDPROC
+
+
+
+
+! Calculates the hole and moves the pin from Offs(pSlugPallConvCD,0,0,200) into hole.
+!We number the pallet holes from 1 to 25. [and return robot to home position or "Waiting position"??]
+PROC DropInPallet()
+
+	!MoveJ Offs(pSlugPallConvCD,0,0,200), v1000, fine, tGrip;
+	IF PinINGripper = 1 THEN
+        
+    pallethole := Command;
+	TPWrite "Hole to be filled: "\Num:=pallethole;
+	counter := 0;
+	offsvarX := 0;
+	offsvarY := 0;
+	
+		FOR i FROM 0 TO 4 DO
+			FOR j FROM 0 TO 4 DO
+			
+			counter := counter + 1;
+
+                IF counter = pallethole THEN
+                	offsvarX := i;
+			        offsvarY := j;
+                ENDIF
+
+			ENDFOR
+		ENDFOR
+
+	xoffset := 35*offsvarX;
+	yoffset := 35*offsvary;
+	
+    
+	TPWrite "X offset from hole 1 = "\ Num:=xoffset;
+	TPWrite "Y offset from hole 1 = "\ Num:=yoffset;
+	
+	!additional point:
+    MoveJ Offs(pSlugPallH1D, xoffset, yoffset, 100), v200, z50, tGrip;
+	!
+	MoveL Offs(pSlugPallH1D, xoffset, yoffset, 50), v200, fine, tGrip;
+	MoveL Offs(pSlugPallH1D, xoffset, yoffset, 0), v200, fine, tGrip;
+	Set Grip;
+	WaitTime 1;
+	PinINGripper:= 0;
+    	
+	
+	MoveL Offs(pSlugPallH1D, xoffset, yoffset, 100), v200, fine, tGrip;	
+    MoveJ Offs(pSlugPallConvCD,0,200,200), v1000, fine, tGrip;
+    
+!Comment while in robotstudio
+!	SetGO Dout,245;
+!	SetGO \Sdelay := SignalDelay,Dout,0;
+
+	
+	TPWrite "Slug is placed in pallethole "\Num:=pallethole;
+    
+    ENDIF
+	
+ENDPROC  
+
+!Moves from pallet to homeposition
+
+PROC ToHomePos()
+	MoveAbsJ jtCalibPos, v1000, fine, tTine;
+ENDPROC
+
+  !Procedure to pick up pin from pallet and return robot to Safe position of pallet
+  PROC RemovePin()
+    
+      IF PinINGripper = 0 THEN
+	
+    pallethole := Command - 100;	
+
+    MoveJ Offs(pSlugPallConvCD,0,0,100), v1000, fine, tGrip;
+	Set Grip;
+	WaitTime 1;
+
+	counter := 0;
+	offsvarX := 0;
+	offsvarY := 0;
+
+		FOR i FROM 0 TO 4 DO
+			FOR j FROM 0 TO 4 DO
+			
+			counter := counter + 1;
+
+                IF counter = pallethole THEN
+                	offsvarX := i;
+			        offsvarY := j;
+                ENDIF
+
+			ENDFOR
+		ENDFOR 
+
+	xoffset := 35*offsvarx;
+	yoffset := 35*offsvary;
+
+    
+	TPWrite "X offset from hole 1 = "\ Num:=xoffset;
+	TPWrite "Y offset from hole 1 = "\ Num:=yoffset;
+
+	MoveL Offs(pSlugPallH1G, xoffset, yoffset, 100), v200, fine, tGrip;
+    MoveL Offs(pSlugPallH1G, xoffset, yoffset, 0), v200, fine, tGrip;
+	Reset Grip;
+	WaitTime 1;
+	PinINGripper:= 1;
+
+	MoveL Offs(pSlugPallH1D, xoffset, yoffset, 100), v200, fine, tGrip;
+	MoveL Offs(pSlugPallH1G, xoffset, yoffset, 200), v200, z50, tGrip;	
+    MoveJ Offs(pSlugPallConvCD,0,200,200), v1000, fine, tGrip;
+!Comment while in robotstudio
+!SetGO Dout,240;
+!SetGO \Sdelay := SignalDelay,Dout,0;
+  	TPWrite "Slug is removed from pallethole "\Num:=pallethole;
+                ELSE
+            TPWrite "Cannot remove pin while pin is in gripper";  
+      ENDIF
+
+  ENDPROC
+
+PROC InDisp1()
+IF PinINGripper = 1 THEN
+		MoveAbsJ jtCalibPos, vMax, z200, tGrip;
+		MoveL Offs(pSlugDispD1,0,0,10), v1000,fine, tGrip;
+		MoveL pSlugDispD1,v200,fine, tGrip;
+		Set Grip;
+		WaitTime 1;
+		PinINGripper:= 0;
+		MoveL pSlugDispD1,v200,fine, tGrip;
+		MoveL Offs(pSlugDispD1,0,0,10), v1000,fine, tGrip;
+		MoveAbsJ jtCalibPos, vMax, fine, tGrip;
+		WaitTime 0.5;
+		Reset Grip;
+        
+		TPWrite "Pin is placed in dispenser 1";
+!Comment while in RS
+!SetGO Dout,205;
+!SetGO \Sdelay := SignalDelay,Dout,0;
+ELSE
+        TPWrite "No pin in gripper";
+ENDIF
+ENDPROC
+
+PROC InDisp2()
+IF PinINGripper = 1 THEN
+		MoveAbsJ jtCalibPos, vMax, z200, tGrip;
+		MoveL Offs(pSlugDispD2,0,0,10), v1000,fine, tGrip;
+		MoveL pSlugDispD2,v200,fine, tGrip;
+		Set Grip;
+		PinINGripper:= 0;
+		WaitTime 1;
+		MoveL pSlugDispD2,v200,fine, tGrip;
+		MoveL Offs(pSlugDispD2,0,0,10), v1000,fine, tGrip;
+		MoveAbsJ jtCalibPos, vMax, fine, tGrip;
+		WaitTime 0.5;
+		Reset Grip;
+		TPWrite "Pin is placed in dispenser 2";
+!Comment while in RS
+!SetGO Dout,205;
+!SetGO \Sdelay := SignalDelay,Dout,0;
+ELSE
+        TPWrite "No pin in gripper";
+ENDIF
+
+ENDPROC
+
+PROC RunConveyorOUT()
+    Reset ConDir;
+    Set ConRun;
+    SetDO \Sdelay := RunTime, ConRun, 0;
+    WaitTime 0.5;
+   
+TPWrite "Pallet has been moved out of cell";
+!Comment while in RS
+!SetGO \Sdelay := RunTime, Dout,225;
+!SetGO \Sdelay := SignalDelay,Dout,0;
+
+ENDPROC
+
+PROC RunConveyorIN()
+ Set ConDir;
+ Set ConRun;
+ SetDO \Sdelay := RunTime, ConRun, 0;
+ WaitTime 0.5;
+ 
+TPWrite "Pallet has been moved into cell";
+!Comment while in RS
+!SetGO \Sdelay := RunTime, Dout,220;
+!SetGO \Sdelay := SignalDelay,Dout,0;
+
+ENDPROC
+PROC SetPallet()
+    
+    MoveJ Offs(pSlugPallConvCD,0,200,200), v1000, z50, tGrip;
+    MoveJ Offs(pPalletConv,0,290,100), v200, fine, tTine;
+    MoveL Offs(pPalletConv,0,290,0), v200, fine, tTine;
+    MoveL Offs(pPalletConv,0,-100,0), v200, fine, tTine;
+    MoveL Offs(pPalletConv, 0,-100,50), v200, fine, tTine;
+    MoveL pConvTilt, v200, fine, tTine;
+    MoveL Offs(pPalletConv, 0,0,50), v200, fine, tTine;
+    MoveL pPalletConv, v200, fine, tTine;
+    MoveL Offs(pPalletConv, 0,282,0), v200, fine, tTine;
+    MoveJ Offs(pSlugPallConvCD,0,200,200), v1000, fine, tGrip;
+	
+    TPWrite "Pallet has been reset on conveyor";
+   !Comment while in RS
+!    SetGO Dout,215;
+!    SetGO \Sdelay := SignalDelay,Dout,0;
+ENDPROC
+!--------MAIN PROCEDURE--------!
+  PROC main()
+!Comment while in RS
+!   WaitDI Din, 0;      !Do not start program before Din = zero
+!   SetGO Dout,210;     !Tell vision program is running
+!   SetGO \Sdelay := SignalDelay,Dout,0;
+!   WaitTime 0.5;       !To give system some time
+
+!Unomment while in robotstudio
+     WaitDI All_OK, 0; !For simulating "WaitDI Din, 0; !Do not start program before Din = zero"
+     
+     
+    Reset Grip;         !Closing grip before starting  
+    Reset ConRun;       !Make sure the conveyor does not run
+    PinINGripper:= 0;
+
+WHILE DMH = 1 DO
+
+!Comment while in robotstudio:
+!        Command:= Din;
+!Unomment while in robotstudio:
+        TPReadNum Command, "Set digital input?";
+
+!#Procedure for placing pallet on conveyor   
+IF Command = 200 THEN
+		PlacePallet;
+ENDIF
+ 
+!#Procedure for returning pallet to table
+IF Command = 222 THEN
+		ReturnPallet;
+ENDIF
+
+!#Procedure for placing pin in pallet and return to safe position pallet.
+! If no pin in gripper it picks from dispenser. Oterwise it places current pin in hole
+IF Command > 0 AND Command <=25  THEN	
+		
+        IF PinINGripper = 1 THEN
+				DropInPallet;
+        ELSEIF PinINGripper = 0 THEN
+				GetPin;
+				!DropInPallet;
+        ENDIF
+ENDIF
+
+!#Procedure for picking pin from pallet and return to safe position pallet
+IF Command > 100 AND Command <=125 THEN
+			RemovePin;      
+ENDIF
+
+!#Procedure for returning robot to home, if pin in gripper->Drop it in Disp1.
+IF Command = 26 THEN	
+    IF PinINGripper = 1 THEN
+		InDisp1;
+	ENDIF
+        ToHomePos;
+		Reset Grip;
+ENDIF
+
+!#Procedure for running conveyor OUT of cell
+IF Command = 27 THEN
+            RunConveyorOUT;
+ENDIF
+
+!#Procedure for running conveyor INTO cell
+IF Command = 28 THEN 
+		RunConveyorIN;
+ENDIF
+
+!#Procedure for reseting the pallet on conveyor. Picks up and places 
+IF Command = 29 THEN
+		SetPallet;
+ENDIF
+!#Procedure for placing pin in dispenser 1
+ IF Command = 126 THEN
+        InDisp1;
+ENDIF
+
+!#Procedure for placing pin in dispenser 2
+IF Command = 127 THEN
+           InDisp2;
+ENDIF
+    
+
+WaitTime 1;     !To make sure the loop doesnt run too fast
+    
+    ENDWHILE
+ 
+    TPWrite "Program is stopped because something is wrong!";
+    !Comment while in RS   
+!    SetGO Dout,230;
+!    SetGO \Sdelay := SignalDelay,Dout,0;
+  ENDPROC
+  
+ENDMODULE

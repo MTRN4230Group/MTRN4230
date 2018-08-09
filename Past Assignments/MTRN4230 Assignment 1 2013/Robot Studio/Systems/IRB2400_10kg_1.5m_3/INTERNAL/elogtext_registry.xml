@@ -1,0 +1,40 @@
+<?xml version = "1.0" encoding="utf-8" ?>
+<elogtext_registry xmlns="urn:abb-robotics-registry-elog-text">
+<entry domain_no="1" min="2" max="174" prepath="F:/Program Files (x86)/ABB Industrial IT/Robotics IT/Mediapool/RobotWare_5.15.1091/language/install/../" postpath="/Controller/Elog/opr_elogtext_1.xml"/>
+<entry domain_no="1" min="175" max="1229" prepath="F:/Program Files (x86)/ABB Industrial IT/Robotics IT/Mediapool/RobotWare_5.15.1091/language/install/../" postpath="/Controller/Elog/opr_elogtext_2.xml"/>
+<entry domain_no="1" min="1230" max="2514" prepath="F:/Program Files (x86)/ABB Industrial IT/Robotics IT/Mediapool/RobotWare_5.15.1091/language/install/../" postpath="/Controller/Elog/opr_elogtext_3.xml"/>
+<entry domain_no="2" min="10" max="149" prepath="F:/Program Files (x86)/ABB Industrial IT/Robotics IT/Mediapool/RobotWare_5.15.1091/language/install/../" postpath="/Controller/Elog/sys_elogtext_1.xml"/>
+<entry domain_no="2" min="150" max="246" prepath="F:/Program Files (x86)/ABB Industrial IT/Robotics IT/Mediapool/RobotWare_5.15.1091/language/install/../" postpath="/Controller/Elog/sys_elogtext_2.xml"/>
+<entry domain_no="2" min="247" max="363" prepath="F:/Program Files (x86)/ABB Industrial IT/Robotics IT/Mediapool/RobotWare_5.15.1091/language/install/../" postpath="/Controller/Elog/sys_elogtext_3.xml"/>
+<entry domain_no="2" min="364" max="488" prepath="F:/Program Files (x86)/ABB Industrial IT/Robotics IT/Mediapool/RobotWare_5.15.1091/language/install/../" postpath="/Controller/Elog/sys_elogtext_4.xml"/>
+<entry domain_no="2" min="489" max="632" prepath="F:/Program Files (x86)/ABB Industrial IT/Robotics IT/Mediapool/RobotWare_5.15.1091/language/install/../" postpath="/Controller/Elog/sys_elogtext_5.xml"/>
+<entry domain_no="3" min="1810" max="4200" prepath="F:/Program Files (x86)/ABB Industrial IT/Robotics IT/Mediapool/RobotWare_5.15.1091/language/install/../" postpath="/Controller/Elog/hw_elogtext_1.xml"/>
+<entry domain_no="3" min="4201" max="7078" prepath="F:/Program Files (x86)/ABB Industrial IT/Robotics IT/Mediapool/RobotWare_5.15.1091/language/install/../" postpath="/Controller/Elog/hw_elogtext_2.xml"/>
+<entry domain_no="3" min="7080" max="7249" prepath="F:/Program Files (x86)/ABB Industrial IT/Robotics IT/Mediapool/RobotWare_5.15.1091/language/install/../" postpath="/Controller/Elog/hw_elogtext_3.xml"/>
+<entry domain_no="3" min="7250" max="9421" prepath="F:/Program Files (x86)/ABB Industrial IT/Robotics IT/Mediapool/RobotWare_5.15.1091/language/install/../" postpath="/Controller/Elog/hw_elogtext_4.xml"/>
+<entry domain_no="3" min="9422" max="9531" prepath="F:/Program Files (x86)/ABB Industrial IT/Robotics IT/Mediapool/RobotWare_5.15.1091/language/install/../" postpath="/Controller/Elog/hw_elogtext_5.xml"/>
+<entry domain_no="4" min="1" max="106" prepath="F:/Program Files (x86)/ABB Industrial IT/Robotics IT/Mediapool/RobotWare_5.15.1091/language/install/../" postpath="/Controller/Elog/arl_elogtext_1.xml"/>
+<entry domain_no="4" min="107" max="257" prepath="F:/Program Files (x86)/ABB Industrial IT/Robotics IT/Mediapool/RobotWare_5.15.1091/language/install/../" postpath="/Controller/Elog/arl_elogtext_2.xml"/>
+<entry domain_no="4" min="258" max="572" prepath="F:/Program Files (x86)/ABB Industrial IT/Robotics IT/Mediapool/RobotWare_5.15.1091/language/install/../" postpath="/Controller/Elog/arl_elogtext_3.xml"/>
+<entry domain_no="4" min="573" max="713" prepath="F:/Program Files (x86)/ABB Industrial IT/Robotics IT/Mediapool/RobotWare_5.15.1091/language/install/../" postpath="/Controller/Elog/arl_elogtext_4.xml"/>
+<entry domain_no="4" min="714" max="1011" prepath="F:/Program Files (x86)/ABB Industrial IT/Robotics IT/Mediapool/RobotWare_5.15.1091/language/install/../" postpath="/Controller/Elog/arl_elogtext_5.xml"/>
+<entry domain_no="4" min="1012" max="1477" prepath="F:/Program Files (x86)/ABB Industrial IT/Robotics IT/Mediapool/RobotWare_5.15.1091/language/install/../" postpath="/Controller/Elog/arl_elogtext_6.xml"/>
+<entry domain_no="4" min="1483" max="1584" prepath="F:/Program Files (x86)/ABB Industrial IT/Robotics IT/Mediapool/RobotWare_5.15.1091/language/install/../" postpath="/Controller/Elog/arl_elogtext_7.xml"/>
+<entry domain_no="4" min="1585" max="1702" prepath="F:/Program Files (x86)/ABB Industrial IT/Robotics IT/Mediapool/RobotWare_5.15.1091/language/install/../" postpath="/Controller/Elog/arl_elogtext_8.xml"/>
+<entry domain_no="4" min="1703" max="1807" prepath="F:/Program Files (x86)/ABB Industrial IT/Robotics IT/Mediapool/RobotWare_5.15.1091/language/install/../" postpath="/Controller/Elog/arl_elogtext_9.xml"/>
+<entry domain_no="5" min="21" max="183" prepath="F:/Program Files (x86)/ABB Industrial IT/Robotics IT/Mediapool/RobotWare_5.15.1091/language/install/../" postpath="/Controller/Elog/moc_elogtext_1.xml"/>
+<entry domain_no="5" min="184" max="279" prepath="F:/Program Files (x86)/ABB Industrial IT/Robotics IT/Mediapool/RobotWare_5.15.1091/language/install/../" postpath="/Controller/Elog/moc_elogtext_2.xml"/>
+<entry domain_no="5" min="280" max="366" prepath="F:/Program Files (x86)/ABB Industrial IT/Robotics IT/Mediapool/RobotWare_5.15.1091/language/install/../" postpath="/Controller/Elog/moc_elogtext_3.xml"/>
+<entry domain_no="5" min="367" max="444" prepath="F:/Program Files (x86)/ABB Industrial IT/Robotics IT/Mediapool/RobotWare_5.15.1091/language/install/../" postpath="/Controller/Elog/moc_elogtext_4.xml"/>
+<entry domain_no="7" min="1001" max="1231" prepath="F:/Program Files (x86)/ABB Industrial IT/Robotics IT/Mediapool/RobotWare_5.15.1091/language/install/../" postpath="/Controller/Elog/io_elogtext_1.xml"/>
+<entry domain_no="7" min="1232" max="1356" prepath="F:/Program Files (x86)/ABB Industrial IT/Robotics IT/Mediapool/RobotWare_5.15.1091/language/install/../" postpath="/Controller/Elog/io_elogtext_2.xml"/>
+<entry domain_no="7" min="1357" max="1450" prepath="F:/Program Files (x86)/ABB Industrial IT/Robotics IT/Mediapool/RobotWare_5.15.1091/language/install/../" postpath="/Controller/Elog/io_elogtext_3.xml"/>
+<entry domain_no="7" min="1451" max="1528" prepath="F:/Program Files (x86)/ABB Industrial IT/Robotics IT/Mediapool/RobotWare_5.15.1091/language/install/../" postpath="/Controller/Elog/io_elogtext_4.xml"/>
+<entry domain_no="8" min="1" max="3" prepath="F:/Program Files (x86)/ABB Industrial IT/Robotics IT/Mediapool/RobotWare_5.15.1091/language/install/../" postpath="/Controller/Elog/usr_elogtext_1.xml"/>
+<entry domain_no="10" min="0" max="0" prepath="F:/Program Files (x86)/ABB Industrial IT/Robotics IT/Mediapool/RobotWare_5.15.1091/language/install/../" postpath="/Controller/Elog/int_elogtext_1.xml"/>
+<entry domain_no="11" min="4800" max="4814" prepath="F:/Program Files (x86)/ABB Industrial IT/Robotics IT/Mediapool/RobotWare_5.15.1091/language/install/../" postpath="/Controller/Elog/miscproc_elogtext_1.xml"/>
+<entry domain_no="12" min="1" max="12" prepath="F:/Program Files (x86)/ABB Industrial IT/Robotics IT/Mediapool/RobotWare_5.15.1091/language/install/../" postpath="/Controller/Elog/cfg_elogtext_1.xml"/>
+<entry domain_no="15" min="330" max="330" prepath="F:/Program Files (x86)/ABB Industrial IT/Robotics IT/Mediapool/RobotWare_5.15.1091/language/install/../" postpath="/Controller/Elog/rapid_elogtext_1.xml"/>
+<titles prepath="F:/Program Files (x86)/ABB Industrial IT/Robotics IT/Mediapool/RobotWare_5.15.1091/language/install/../" postpath="/Controller/Elog/domain_elogtitles.xml"/>
+<domains prepath="F:/Program Files (x86)/ABB Industrial IT/Robotics IT/Mediapool/RobotWare_5.15.1091/language/install/../" postpath="/Controller/Elog/elog_domains.xml"/>
+</elogtext_registry>
