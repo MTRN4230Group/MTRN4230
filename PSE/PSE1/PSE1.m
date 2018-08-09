@@ -1,6 +1,3 @@
-% Week 2 Problem Solving
-% Author: Paul Tran z5018155
-% S2 2018 MTRN4230 Robotics
 
 %Part A
 clf; clear; clc;
