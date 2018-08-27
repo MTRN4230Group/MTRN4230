@@ -40,3 +40,11 @@ J = IRB120.jacob0(T2);
 jsingu(J);
 IRB120.maniplty(T2,'all')
 %figure;  IRB120.vellipse(T2, 'trans');
+
+%This is a really good explanation: (Jesse)
+%Wrist Singularities - These happen when two of the robot's wrist axes (joints 4 and 6) line up with each other. 
+% This can cause these joints to try and spin 180 degrees instantaneously.
+%Shoulder Singularities - These happen when the center of the robot's wrist aligns with the axis of joint 1. It
+% causes joints 1 and 4 to try and spin 180 degrees instantaneously. A subset of this is an Alignment Singularity, where the first and last joints of the robot (joints 1 and 6) line up with each other.
+%Elbow Singularities - These happen when the center of the robot's wrist lies on the same plane as joints 2 and 3.
+% Elbow singularities look like the robot has "reached too far", causing the elbow to lock in position. This video shows a good example of an elbow singularity which causes the robot to get stuck.
