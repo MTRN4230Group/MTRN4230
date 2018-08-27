@@ -6,11 +6,11 @@ L(1) = Link([0 0.290 0.000 pi/2]);
 L(2) = Link([0 0.000 0.270 0]);
 L(3) = Link([0 0.000 0.070 -pi/2]);
 L(4) = Link([0 0.302 0.000 pi/2]);
-L(5) = Link([0 0.000 0.000 -pi/2]);
-L(6) = Link([0 0.137 0.000 0]); 
-L;
+L(5) = Link([0 0.000 0.000 pi/2]);
+L(6) = Link([0 0.137 0.0 0]); 
+L
 %Put together, call it IRB120.
-IRB120 = SerialLink(L, 'name', 'IRB120','offset', [pi pi/2 0 0 0 pi]); 
+IRB120 = SerialLink(L, 'name', 'IRB120','offset', [pi pi/2 0 0 pi 0]); 
 
 % Above is just the DH defined robot from PSE2. CCW is positive direction.
 axis([-1 1 -1 1 -1 1]);
@@ -24,14 +24,17 @@ J = IRB120.jacob0([pi/18 pi/18 pi/18 pi/18 pi/18 pi/18]) % Calculate Jacobian at
 all_dot = J*[0.2 0.2 0.2 0.2 0.2 0.2]' %This is [vx, vy, vz, rotations], for finding non-end effctor link info, maybe cut down system by 1 link such that you are treating as 5 link robot for finding 5th link info.
 Scale2unit = 1/sqrt((all_dot(1)^2)+(all_dot(2)^2)+(all_dot(3)^2)); %Scale to unit vector.
 
-IRB120.plot(initconfig); % Plotting initial
+%IRB120.plot(initconfig); % Plotting initial
+IRB120.plot([pi/18 pi/18 pi/18 pi/18 pi/18 pi/18]); 
 hold on;
 % Plotting unit vector.
 quiver3(htfm.t(1),htfm.t(2),htfm.t(3),Scale2unit*all_dot(1),Scale2unit*all_dot(2),Scale2unit*all_dot(3),'LineWidth',2,'color','m'); 
 
-% Target 0.5 m/s in y, 0.25 rad/s around base frame z axis. 
-jointangularvelocities = inv(J) * [0 0.5 0 0 0 0.25]' %Angle velocity of each of the joints.
+% Target 0.5 m/s in z, 25 deg/s around base frame z axis. 
+jointangularvelocities = inv(J) * [0 0 0.5 0 0 25*(pi/180)]' %Angle velocity of each of the joints.
 indegrees = jointangularvelocities*(180/pi)
 x_dot = J*jointangularvelocities  % Confirm the actual velocities.
+
+
 
 
