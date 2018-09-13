@@ -1,0 +1,267 @@
+!Rapid Motion Code
+!By William Huang z5062658
+!Draft 1
+
+MODULE MTRN_Rob_Proc (SYSMODULE, NOSTEPIN, READONLY)
+
+ ! MTRN ROBOTICS COMMON PROCEDURES
+ !********************************
+ !
+ ! For the ABB IRB120 Robot in the Mechatronics Blockhouse Lab for the MTRN4230 Robotics Course 2014
+ !
+!-----------------------------------------------------------------------------------------------------
+!-----------------------------------------------------------------------------------------------------
+ RECORD robostate
+        ! Linear position of the end-effector.
+        num Xpos;
+        num Ypos;
+        num Zpos;
+ENDRECORD
+!-----------------------------------------------------------------------------------------------------
+!-----------------------------------------------------------------------------------------------------
+PROC listenandstartConnection()
+        VAR string host:="127.0.0.1";
+	VAR num port:=56000;
+        ! Create the socket to listen for a connection on.
+        VAR socketdev welcome_socket;
+        SocketClose client_socket;
+        SocketCreate welcome_socket;
+
+        ! Bind the socket to the host and port.
+        SocketBind welcome_socket, host, port;
+        
+        ! Listen on the welcome socket.
+        SocketListen welcome_socket;
+        
+        ! Accept a connection on the host and port.
+        SocketAccept welcome_socket, client_socket;
+
+	SocketReceive client_socket \Str:=receivedString;
+        
+        ! Close the welcome socket, as it is no longer needed.
+        SocketClose welcome_socket;
+        
+    ENDPROC
+
+    
+FUNC num sendResponse()
+    
+     !Starts to connect RS to matlab. if there is no connection, it will keep retrying.
+     VAR string received_str;
+     VAR num value := -1;   
+        listenandstartConnection;
+            
+        ! Receive a string from the client.
+        SocketReceive client_socket \Str:=received_str;
+        
+        IF received_str = "TEST" THEN 
+            ! Send the string back to the client, adding a line feed character.
+            SocketSend client_socket \Str:=("RESPONSE" + "\0A");
+            value:= 0;
+        ELSE
+            value := 1;
+        ENDIF
+        
+        RETURN value;
+        
+ERROR
+           IF ERRNO=ERR_SOCK_TIMEOUT THEN
+               RETRY;
+           ENDIF
+        
+ENDFUNC
+ 
+     ! Close the connection to the client.
+!PROC closeConnection()
+!     
+!ENDPROC
+
+
+!-----------------------------------------------------------------------------------------------------
+!-----------------------------------------------------------------------------------------------------
+
+ PROC MoveToCalibPos()
+ !***************************************************************************************
+ !
+ ! Move to Calibrate Position
+ !
+ !***************************************************************************************
+
+ MoveAbsJ jtCalibPos,v400,fine,tool0;
+
+ ENDPROC
+
+
+ PROC MoveToHomePos()
+ !***************************************************************************************
+ !
+ ! Move to Home Position
+ !
+ !***************************************************************************************
+
+ MoveAbsJ jtHomePos,v400,fine,tool0;
+
+ ENDPROC
+
+!-----------------------------------------------------------------------------------------------------
+!-----------------------------------------------------------------------------------------------------
+!Set global vars Xpos, Ypos and Zpos then call this function. Alternatively, we can add function aruguments.
+PROC updatelinearMovement()
+!Linear movement desired is defined by Xpos, Ypos and Zpos.
+    RTarget.trans := [Xpos,Ypos,Zpos];
+    MoveL RTarget,robSpeed,fine,tSCup;
+
+ENDPROC
+
+
+!Set global vars j1 to j6 then call this function. Alternatively, we can add function aruguments.
+PROC updatejointMovement()
+!Joint movement defined by j1 to j6 expressed as radians.
+    JTarget.robax := [j1,j2,j3,j4,j5,j6];
+    MoveAbsJ JTarget,robSpeed,fine,tSCup;
+        
+ENDPROC
+
+
+!Reads the current joint angles.
+PROC currentjointPosition()
+!CJointT reads the current joint angles.
+    JTarget := CJointT();
+    j1 := JTarget.robax.rax_1;
+    j2 := JTarget.robax.rax_2;
+    j3 := JTarget.robax.rax_3;
+    j4 := JTarget.robax.rax_4;
+    j5 := JTarget.robax.rax_5;
+    j6 := JTarget.robax.rax_6;
+
+ENDPROC
+
+ 
+PROC currentlinearPosition()
+!CalcRobT calculates xyz robtarget from a joint target or use Cjoiny to calculate current xyz.
+    RTarget := CalcRobT(JTarget,tSCup \WObj:= wobj0);
+    Xpos := RTarget.trans.x;
+    Ypos := RTarget.trans.y;
+    Zpos := RTarget.trans.z;
+ENDPROC 
+
+
+PROC setSpeed(VAR speeddata speed)
+!Setting speed of robot.
+    robSpeed := speed;
+ENDPROC 
+
+
+!Simply input offset for table home and conveyor home to define relative robtargets. 
+PROC applyOffset(VAR pos xOffset, VAR pos yOffset, VAR pos zOffset)
+!Offs returns the robtarget with some offset.
+    RTarget = Offs(RTarget,xOffset, yOffset, zOffset);
+ENDPROC 
+
+TRAP pauseMovement()
+!Interrupt on detection of pause variable set to 1. Waits until it is 0 to begin movement again.
+	StopMove;
+	WaitDI di1,0;
+	StartMove;
+ENDTRAP
+
+!Verify pass in data type "string"
+FUNC decodeString(VAR string received_str)
+     IF received_str[0:2] = "DIO" THEN 
+            IF received_str[4] = "5" THEN
+	       functionVacPwr(receivedString[6]);
+
+	    ELSEIF received_str[4] = "4" THEN
+               functionVacSol(receivedString[6]);
+
+	    ELSEIF received_str[4] = "2" THEN
+               functionConRun(receivedString[6]);
+            ELSE
+!3 = condir
+               functionConDir(receivedString[6]);
+	    ENDIF
+
+!!!For other non DIO cases.
+        ELSE
+             !!!
+        ENDIF
+
+        RETURN 0;
+ENDFUNC 
+
+!A[-1] STARTS BACKWARDS FROM THE STRING.
+
+PROC functionVacPwr(VAR string onOff)
+        IF onOff = "1" THEN
+            DO10-1= 1;
+        ELSE
+            DO10-1= 0;
+	ENDIF
+
+ENDPROC
+
+PROC functionVacSol(VAR string onOff)
+        IF onOff = "1" THEN
+            DO10-2= 1;
+        ELSE
+            DO10-2= 0;
+	ENDIF
+
+ENDPROC
+
+
+PROC functionConRun(VAR string onOff)
+        IF onOff = "1" THEN
+            D010-3= 1;
+        ELSE
+            D010-3= 0;
+	ENDIF
+
+ENDPROC
+
+PROC functionConDir(VAR string onOff)
+        IF onOff = "1" THEN
+            D010-4= 1;
+        ELSE
+            D010-4= 0;
+	ENDIF
+
+ENDPROC
+
+
+
+
+TRAP cancelMovement()
+!Interrupt on detection of cancel variable set to 1. Restores to home position.
+    StopMove;
+    MoveAbsJ jtHomePos,v400,fine,tool0;
+    StartMove;
+ENDTRAP
+
+
+ENDMODULE
+
+!-----------------------------------------------------------------------------------------------------
+!-----------------------------------------------------------------------------------------------------
+
+!Important resources:
+!http://developercenter.robotstudio.com/BlobProxy/manuals/RapidIFDTechRefManual/doc522.html  - This is jointtarget struct definition.
+!http://developercenter.robotstudio.com/BlobProxy/manuals/RapidIFDTechRefManual/doc545.html  - Robtarget struct definition.
+!http://developercenter.robotstudio.com/BlobProxy/manuals/RapidIFDTechRefManual/doc110.html  - MoveAbsJ definition
+!https://library.e.abb.com/public/688894b98123f87bc1257cc50044e809/Technical%20reference%20manual_RAPID_3HAC16581-1_revJ_en.pdf  - Full Library of functions.
+!http://developercenter.robotstudio.com/BlobProxy/manuals/RapidIFDTechRefManual/doc122.html  - MoveL definition.
+
+!Example movement definition.
+!        currentlinearPosition;
+!        Xpos := x_variable;
+!        Ypos := 100;
+!        Zpos := 200;
+!        updatelinearMovement;
+!        
+!     
+!        currentjointPosition;
+!        j6 := j6 + theta_variable;
+!        updatejointMovement;
+
+
+!End effector can be reoriented with these movement comands.
